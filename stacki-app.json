@@ -1,17 +1,21 @@
 {
   "manifestVersion": 1,
   "id": "page-versions",
-  "name": "Page versions",
-  "version": "0.1.0",
-  "description": "Show a client several versions of a page and let them pick one. Choices and comments are kept in the project, so they commit and pull with the site.",
+  "name": "Page approval",
+  "version": "0.2.0",
+  "description": "Let a client approve a site page by page: compare page versions and section variants, pick one, and track approval until everything is ready for build. Choices are kept in the project, so they commit and pull with the site.",
   "icon": "icon.svg",
   "entry": "index.html",
-  "window": { "mode": "panel", "width": 340, "height": 620 },
+  "window": {
+    "mode": "panel",
+    "width": 340,
+    "height": 620
+  },
   "permissions": [
     {
       "id": "choose",
-      "label": "Choose a version",
-      "description": "Pick the preferred version of a page and leave a comment.",
+      "label": "Choose and approve",
+      "description": "Pick the preferred version or section variant, leave a comment and approve pages.",
       "default": true
     },
     {
