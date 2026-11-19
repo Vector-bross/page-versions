@@ -1,0 +1,135 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--stacki-bg-panel);
+  color: var(--stacki-text);
+  font: var(--stacki-font-size) / 1.45 var(--stacki-font);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--stacki-space-3);
+  padding: var(--stacki-space-3) var(--stacki-space-4);
+  border-bottom: 1px solid var(--stacki-line);
+}
+
+.head-title {
+  flex: 1;
+  font-weight: var(--stacki-font-weight-strong);
+}
+
+.chip {
+  padding: 1px 8px;
+  border-radius: var(--stacki-radius-round);
+  background: var(--stacki-bg-hover);
+  color: var(--stacki-text-muted);
+  font-size: var(--stacki-font-size-small);
+}
+
+.chip.chosen {
+  background: var(--stacki-accent-soft);
+  color: var(--stacki-text);
+}
+
+.empty {
+  margin: 0;
+  padding: var(--stacki-space-4);
+  color: var(--stacki-text-faint);
+}
+
+.set {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stacki-space-3);
+  padding: var(--stacki-space-4);
+  border-bottom: 1px solid var(--stacki-line);
+}
+
+.set-head {
+  display: flex;
+  align-items: center;
+  gap: var(--stacki-space-3);
+}
+
+.set-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: var(--stacki-font-weight-medium);
+}
+
+.versions {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.version {
+  display: flex;
+  align-items: center;
+  gap: var(--stacki-space-3);
+  min-height: var(--stacki-row-height);
+  padding: var(--stacki-space-1) var(--stacki-space-3);
+  border-radius: var(--stacki-radius-option);
+  cursor: pointer;
+}
+
+.version:hover {
+  background: var(--stacki-bg-hover);
+}
+
+.version.open {
+  background: var(--stacki-bg-active);
+}
+
+.version-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.version-path {
+  color: var(--stacki-text-faint);
+  font-size: var(--stacki-font-size-tiny);
+}
+
+.decision {
+  margin: 0;
+  color: var(--stacki-text-muted);
+}
+
+.decision q {
+  color: var(--stacki-text);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--stacki-space-3);
+}
+
+.row > .grow {
+  flex: 1;
+  min-width: 0;
+}
+
+.hint {
+  margin: 0;
+  color: var(--stacki-text-faint);
+  font-size: var(--stacki-font-size-small);
+}

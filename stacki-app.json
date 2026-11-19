@@ -1,0 +1,24 @@
+{
+  "manifestVersion": 1,
+  "id": "page-versions",
+  "name": "Page versions",
+  "version": "0.1.0",
+  "description": "Show a client several versions of a page and let them pick one. Choices and comments are kept in the project, so they commit and pull with the site.",
+  "icon": "icon.svg",
+  "entry": "index.html",
+  "window": { "mode": "panel", "width": 340, "height": 620 },
+  "permissions": [
+    {
+      "id": "choose",
+      "label": "Choose a version",
+      "description": "Pick the preferred version of a page and leave a comment.",
+      "default": true
+    },
+    {
+      "id": "manage",
+      "label": "Manage comparisons",
+      "description": "Create comparisons, add or remove versions and reset choices.",
+      "default": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page versions</title>
+    <link rel="stylesheet" href="__stacki/ui.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="stacki-sdk.js"></script>
+    <script src="__stacki/ui.js"></script>
+  </head>
+  <body>
+    <div class="stacki-ui app">
+      <header class="head">
+        <span class="head-title">Page versions</span>
+        <span id="view-only" class="chip" hidden>View only</span>
+        <stacki-button id="new-set" variant="ghost" icon="plus" aria-label="New comparison from the open page" hidden></stacki-button>
+      </header>
+      <p id="empty" class="empty" hidden></p>
+      <main id="sets" class="sets"></main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
