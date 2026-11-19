@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "page-versions",
-  "name": "Page versions",
+  "name": "Page approval",
   "version": "0.2.0",
   "description": "Let a client approve a site page by page: compare page versions and section variants, pick one, and track approval until everything is ready for build. Choices are kept in the project, so they commit and pull with the site.",
   "icon": "icon.svg",

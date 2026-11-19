@@ -1,4 +1,4 @@
-/* Page versions: compare whole-page versions and record which one the client picks.
+/* Page approval: compare whole-page versions and record which one the client picks.
  *
  * A comparison ("set") is one stored value, key `sets/<id>`, in project storage:
  *   { id, title, versions: [{ id, label, path }], decision: { versionId, comment, by, byName, at } | null, createdAt }
@@ -939,5 +939,5 @@ async function start() {
 
 start().catch((error) => {
   emptyElement.hidden = false;
-  emptyElement.textContent = `Page versions could not start: ${error.message}`;
+  emptyElement.textContent = `Page approval could not start: ${error.message}`;
 });

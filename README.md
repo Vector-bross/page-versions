@@ -1,4 +1,4 @@
-# page-versions
+# Page approval
 
 A Stacki app that lets a client approve a site page by page. Choices, confirmations and approvals are kept in the project, so they commit and pull with the site.
 
