@@ -12,12 +12,13 @@
   <body>
     <div class="stacki-ui app">
       <header class="head">
-        <span class="head-title">Page versions</span>
+        <span class="head-title">Page approval</span>
         <span id="view-only" class="chip" hidden>View only</span>
-        <stacki-button id="new-set" variant="ghost" icon="plus" aria-label="New comparison from the open page" hidden></stacki-button>
       </header>
+      <div id="status" class="status" hidden></div>
       <p id="empty" class="empty" hidden></p>
-      <main id="sets" class="sets"></main>
+      <main id="tree" class="tree"></main>
+      <div id="access" class="access" hidden></div>
     </div>
     <script src="app.js"></script>
   </body>
